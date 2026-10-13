@@ -21,7 +21,6 @@ jobs:
         os: ['windows-latest', 'windows-11-arm']
         ruby: ${{ fromJson(needs.ruby-versions.outputs.versions) }}
         exclude:
-          - ruby: head
           - os: 'windows-11-arm'
             ruby: '3.3'
           - os: 'windows-11-arm'
